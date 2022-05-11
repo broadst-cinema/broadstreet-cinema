@@ -1,0 +1,833 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+/*----------------------------------------- my code ----------------------------------*/
+
+@font-face {
+    font-family: "baby";
+    src: url(fonts/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: "quick";
+    src: url(fonts/Quicksand-VariableFont_wght.ttf);
+}
+
+h1 {
+    display: none;
+}
+
+h2 {
+    font-family: "baby";
+    font-size: 30pt;
+    color: black;
+}
+
+h3 {
+    font-family: "baby";
+    font-size: 20pt;
+    color: white;
+    display: inline-block;
+    padding-left: 15px;
+}
+
+h4 {
+    font-family: "baby";
+    font-size: 23pt;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    font-family: "quick", arial, sans-serif;
+    font-size: 13pt;
+    color: black;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+body {
+    background-color: white;
+}
+
+
+
+/*------------------------------------- header ------------------------------------- */
+header {
+    width: 100%;
+    background-color: white;
+    overflow: auto;
+}
+
+.topnav {
+    display: none;
+}
+
+#logo {
+    float: left;
+    margin-left: 8%;
+    height: 130px;
+    width: auto;
+}
+
+nav {
+    width: 450px;
+    float: right;
+    background-color: #f21919;
+    font-family: "baby";
+    font-size: 20pt;
+    padding: 10px;
+    margin-top: 3%;
+}
+
+ul {
+    margin-right: 30%;
+}
+
+ul li {
+    display: inline-block;
+    float: right;
+    margin-left: 20px;
+}
+
+/*---------------- anchors -----------------*/
+.inline {
+    color: #f74646;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.stuff {
+    width: 100%;
+    height: 750px;
+    padding: 2%;
+}
+
+.bigred {
+    font-size: 33pt;
+    color: #f21919;
+}
+
+
+/* ------------------------------------ PAGE ONE - big photo section ------------------------------ */
+#overlay {
+    background: url(photos/production.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    width: 90%;
+    color: white;
+    font-family: "baby";
+    font-size: 36pt;
+    margin: 5%;
+}
+
+#weare {
+    height: auto;
+    width: 500px;
+    margin-left: 130px;
+    padding-top: 100px;
+}
+
+.button {
+    width: 150px;
+    padding: 10px;
+    padding-top: 15px;
+    background-color: #f21919;
+    color: white;
+    font-size: 22pt;
+    text-align: center;
+    font-family: "baby";
+    transition: background-color 2s, width 2s;
+}
+
+.button:hover {
+    background-color: #f74646;
+    width: 170px;
+}
+
+#learnmore {
+    float: right;
+    margin-right: 40px;
+    margin-top: 500px;
+}
+
+
+
+/* ------------------------ vision section -------------------------- */
+#abtblurb {
+    width: 80%;
+    height: auto;
+    padding: 5%;
+    overflow: auto;
+    margin: 0px auto;
+    margin-top: 15%;
+    margin-bottom: 8%;
+}
+
+#twocolleft {
+    width: 55%;
+    height: auto;
+    float: left;
+}
+
+#twocolright {
+    width: 45%;
+    height: auto;
+    float: right;
+}
+
+#girls {
+    height: auto;
+    width: 100%;
+    float: right;
+}
+
+#visiontext {
+    margin-top: 15px;
+    padding-left: 20px;
+    padding-right: 15%;
+}
+
+#abtbutt {
+    margin: 0px auto;
+    margin-top: 20%;
+}
+
+
+
+
+
+/*------------------------- slide show ------------------------*/
+#portfolio {
+    margin-top: 20%;
+}
+
+#porttext {
+    width: 67%;
+    margin: 0px auto;
+    margin-bottom: 3%;
+}
+
+#portbody {
+    padding-left: 3%;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+
+
+
+
+
+
+/* ---------------------- contact section -------------------- */
+
+#contact {
+    width: 80%;
+    height: auto;
+    padding: 5%;
+    overflow: auto;
+    margin: 0px auto;
+    margin-top: 20%;
+    margin-bottom: 20%;
+}
+
+#contactform {
+    margin-top: 3%;
+}
+
+fieldset {
+    width: 100%;
+    border: 20px solid #f21919;
+    padding: 25px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+input.submit {
+    background-color: #f21919;
+    color: white;
+    font-family: "baby";
+    font-size: 20pt;
+    border: none;
+    padding: 4px 10px;
+}
+
+.submit {
+    text-align: right;
+}
+
+
+
+
+
+
+/*-------------------------------------- footer -------------------------------------*/
+footer {
+    width: 92%;
+    padding: 10px;
+    background-color: #f21919;
+    padding-left: 7%;
+    margin: 0px auto;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+/*--------------------------------------------------------- PAGE TWO -------------------------------------------------------*/
+
+
+/* ----------------- general abt section -------------- */
+#genabt {
+    width: 90%;
+    height: 80vh;
+    margin: 5%;
+    margin-bottom: 0%;
+}
+
+#borderbox {
+    width: 53%;
+    height: 57vh;
+    overflow: hidden;
+    float: left;
+    position: absolute;
+    z-index: 3;
+}
+
+#guys {
+    width: 100%;
+    height: auto;
+    transform: translate(0px, -370px);
+}
+
+#redabt {
+    position: absolute;
+    z-index: 2;
+    width: 53%;
+    height: 57vh;
+    background-color: #f21919;
+    margin-top: 30px;
+    margin-left: 25px;
+}
+
+#grayabt {
+    position: absolute;
+    z-index: 1;
+    width: 53%;
+    height: 57vh;
+    background-color: #232323;
+    margin-top: 60px;
+    margin-left: 50px;
+}
+
+#genabttext {
+    width: 32%;
+    height: auto;
+    float: right;
+    margin-left: 5%;
+    margin-right: 2%
+}
+
+#abthead {
+    font-size: 45pt;
+}
+
+#bigredabt {
+    font-size: 48pt;
+    color: #f21919;
+}
+
+#genpara {
+    margin-top: 4%;
+}
+
+#borderbutt {
+    width: 100%;
+    height: 100px;
+    float: right;
+    margin-top: 5%;
+}
+
+
+/*i know applying a class would be better but i tried to apply a class instead of separate ids and it didn't work??*/
+#floatright {
+    float: left;
+    margin-left: 15px;
+}
+
+#floatleft {
+    float: left;
+}
+
+/*----- moving line #1 ------*/
+
+#mySVG {
+    position: relative;
+    top: -10%;
+    left: 32%;
+    width: 3000px;
+    height: 3000px;
+    margin-left: -500px;
+  }
+
+
+/*--------------------------- client list section ---------------------- */
+
+#clientlist {
+    width: 90%;
+    margin: 0px auto;
+    padding-top: 1%;
+}
+
+
+/* ---- moving line #2 ---*/
+
+#clientfloat {
+    float: right;
+}
+
+#clientpics {
+    position: absolute;
+    padding-top: 2%;
+    z-index: 1;
+}
+
+img.client {
+    width: auto;
+    height: 140px;
+}
+
+#special {
+    height: 90px;
+}
+
+#bats {
+    height: 170px;
+}
+
+
+
+
+/*------------------------------ crew list section ----------------------- */
+
+#crew {
+    width: 90%;
+    height: auto;
+    margin: 0px auto;
+    overflow: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+#grid {
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 3%;
+}
+
+.names {
+    display: inline-block;
+    padding-bottom: 35px;
+    width: 29%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+  
+.crewpic {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #232323;
+}
+  
+.container:hover .overlay {
+    opacity: 0.8;
+}
+  
+.crewtext {
+    width: 99%;
+    padding-left: 5%;
+    padding-right: 4%;
+    color: white;
+    font-size: 13pt;
+    font-family: "quick";
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+
+.job {
+    padding: 0%;
+}
+
+
+/* --------------------------- tablet media query ------------------------ */
+
+@media screen and (min-width: 721px) and (max-width: 990px) {
+
+#logo {
+    height: 110px;
+}
+
+#overlay {
+    height: 650px;
+}
+
+#learnmore {
+    margin-top: 350px;
+}
+
+#abtblurb {
+    width: 95%;
+}
+
+#twocolleft {
+    font-size: 12pt;
+    width: 50%;
+}
+
+#twocolright {
+    width: 50%;
+}
+
+#abtbutt {
+    margin-top: 11%;
+}
+
+#porttext {
+    width: 83%;
+}
+
+.slideshow-container {
+    max-width: 800px;
+}
+
+#contact {
+    width: 90%;
+}
+
+}
+
+
+
+
+
+/* --------------------------- mobile media query ------------------------ */
+
+@media screen and (max-width: 720px) {
+
+    #logo {
+        height: 90px;
+    }
+    
+    nav {
+        width: 180px;
+        min-height: 50px;
+        padding-top: 6px;
+    }
+
+    /* Style the navigation menu */
+.topnav {
+    display: unset;
+    overflow: hidden;
+    background-color: #f21919;
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+    text-align: right;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 9px 16px;
+    text-decoration: none;
+    font-family: "baby";
+    font-size: 18px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: #f21919;
+    display: block;
+    position: absolute;
+    right: 1;
+    top: 0;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+
+    ul {
+        margin-right: 0%;
+        display: none;
+    }
+
+    ul li { 
+        margin-left: 7px;
+    }
+    
+    
+    #overlay {
+        height: 300px;
+        font-size: 30pt;
+    }
+
+    #weare {
+        width: 300px;
+        margin-left: 50px;
+        padding-top: 60px;
+    }
+
+    .button {
+        font-size: 19pt;
+    }
+
+    #learnmore {
+        margin-top: 75px;
+    }
+
+    #abtblurb {
+        width: 100%;
+    }
+    
+    #twocolleft {
+        font-size: 12pt;
+        width: 50%;
+    }
+    
+    #twocolright {
+        width: 50%;
+    }
+
+    #girls {
+        height: auto;
+        width: 100%;
+        float: right;
+    }
+    
+    #visiontext {
+        padding-right: 10%;
+    }
+
+    .readmore {
+        display: none;
+    }
+    
+    #abtbutt {
+        margin-top: 11%;
+    }
+    
+    #porttext {
+        width: 83%;
+    }
+    
+    .slideshow-container {
+        max-width: 550px;
+    }
+    
+    #contact {
+        width: 80%;
+    }
+
+    #comments {
+        width: 95%;
+    }
+
+    footer {
+        text-align: center;
+        word-spacing: 35px;
+    }
+
+    h3 {
+        padding-left: 0px;
+    }
+}
+
