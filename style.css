@@ -55,12 +55,12 @@ table {
 
 @font-face {
     font-family: "baby";
-    src: url(fonts/BebasNeue-Regular.ttf);
+    src: url(BebasNeue-Regular.ttf);
 }
 
 @font-face {
     font-family: "quick";
-    src: url(fonts/Quicksand-VariableFont_wght.ttf);
+    src: url(Quicksand-VariableFont_wght.ttf);
 }
 
 h1 {
@@ -171,7 +171,7 @@ ul li {
 
 /* ------------------------------------ PAGE ONE - big photo section ------------------------------ */
 #overlay {
-    background: url(photos/production.jpg);
+    background: url(production.jpg);
     background-size: cover;
     background-position: center;
     height: 800px;
